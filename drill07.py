@@ -33,7 +33,7 @@ class smallball:
         self.image.draw(self.x, self.y)
 
     def update(self):
-        if self.y >= 60+ self.speed:
+        if self.y >= 50 + self.speed:
             self.y -= self.speed
 
 
@@ -67,7 +67,7 @@ grass = grass()
 team = [boy() for i in range(11)]
 
 ball =[]
-for i in range(11):
+for i in range(20):
     x = random.randint(1, 2)
     if x == 1:
         ball.append(smallball())
